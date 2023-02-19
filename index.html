@@ -188,7 +188,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2023-02-19 09:00:36 / Modified: 09:12:45" itemprop="dateCreated datePublished" datetime="2023-02-19T09:00:36+08:00">2023-02-19</time>
+      <time title="Created: 2023-02-19 09:00:36 / Modified: 10:03:30" itemprop="dateCreated datePublished" datetime="2023-02-19T09:00:36+08:00">2023-02-19</time>
     </span>
 
   
@@ -201,19 +201,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h4 id="记一道三角函数题"><a href="#记一道三角函数题" class="headerlink" title="记一道三角函数题"></a>记一道三角函数题</h4><h5 id="1-题目背景"><a href="#1-题目背景" class="headerlink" title="1. 题目背景"></a>1. 题目背景</h5><p>设三个角$A\not&#x3D;B\not&#x3D;C$，满足$cosA+cosB+cosC&#x3D;0$, $sinA+sinB+sinC&#x3D;0$, 求证$cos^2A+cos^2B+cos^2C&#x3D;\frac{3}{2}$.</p>
-<h5 id="2-简化情况"><a href="#2-简化情况" class="headerlink" title="2. 简化情况"></a>2. 简化情况</h5><p>令$C&#x3D;-\frac{1}{2}\pi$, 则$cosA+cosB&#x3D;0$, 又由$sinC&#x3D;-1,sinA+sinB+sinC&#x3D;0$得$sinA&#x3D;sinB&#x3D;\frac{1}{2}$, 即$A&#x3D;\frac{1}{6}\pi,B&#x3D;\frac{5}{6}\pi$. 易得$cos^2A+cos^2B+cos^2C&#x3D;\frac{3}{2}$.</p>
-<h5 id="3-猜想"><a href="#3-猜想" class="headerlink" title="3. 猜想"></a>3. 猜想</h5><p>满足条件的一组$A,B,C$的终边三等分单位圆.</p>
-<h5 id="4-证明"><a href="#4-证明" class="headerlink" title="4. 证明"></a>4. 证明</h5><h6 id="充分性的几何证明"><a href="#充分性的几何证明" class="headerlink" title="充分性的几何证明"></a>充分性的几何证明</h6><p><img src="https://s2.loli.net/2023/02/11/cl4KNeoH8FudCRA.png" alt="image.png|400"><br>如图，$A’$是$A$关于原点的对称点，$A’F’\perp x,A’’B\parallel A’F’,A’’A’\parallel x$<br>由$\triangle OBA’$和$\triangle OCA’$是等边三角形，易得$\triangle BA’’A’\cong\triangle CGO$<br>从而$CG&#x3D;BA’’&#x3D;BE+AF$, 即$sinA+sinB+sinC&#x3D;0$<br>同理可证$cosA+cosB&#x3D;0\quad\square$</p>
-<h6 id="三角恒等变换推导"><a href="#三角恒等变换推导" class="headerlink" title="三角恒等变换推导"></a>三角恒等变换推导</h6><p>$$sinA+sinB&#x3D;-sinC,cosA+cosB&#x3D;-cosC$$<br>$$(sinA+sinB)^2+(cosA+cosB)^2&#x3D;sin^2C+cos^2C&#x3D;1$$<br>$$2sinAsinB+2cosAcosB&#x3D;-1$$<br>$$cos(A-B)&#x3D;-\frac{1}{2}$$<br>即$A-B&#x3D;\frac{2}{3}\pi+2k\pi$或$A-B&#x3D;-\frac{2}{3}\pi+2k\pi$ ($k\in\mathbb{Z}$)<br>同理可证$B-C&#x3D;\frac{2}{3}\pi+2k\pi$或$B-C&#x3D;-\frac{2}{3}\pi+2k\pi$ ($k\in\mathbb{Z}$), $A-C&#x3D;\frac{2}{3}\pi+2k\pi$或$A-C&#x3D;-\frac{2}{3}\pi+2k\pi$ ($k\in\mathbb{Z}$).<br>设$B&gt;A&gt;C$, 又由$A\not&#x3D;B\not&#x3D;C$, 易得$B&#x3D;A+\frac{2}{3}\pi+2m\pi,A&#x3D;C+\frac{2}{3}\pi+2n\pi,m,n\in\mathbb{Z}$, 即$A,B,C$的终边三等分圆.$\quad\square$</p>
-<h5 id="5-原题的解决"><a href="#5-原题的解决" class="headerlink" title="5. 原题的解决"></a>5. 原题的解决</h5><p>$$sinA+sinB&#x3D;-sinC\quad\to\quad ①2sin\frac{A+B}{2}cos\frac{A-B}{2}&#x3D;-sinC$$<br>$$cosA+cosB&#x3D;-cosC\quad\to\quad ②2cos\frac{A+B}{2}cos\frac{A-B}{2}&#x3D;-cosC$$<br>∵若$cos\frac{A-B}{2}&#x3D;0$, 则$cosC&#x3D;sinC&#x3D;0$, 与$cos^2C+sin^2C&#x3D;1$矛盾<br>∴$cos\frac{A-B}{2}\not&#x3D;0$</p>
-<ol>
-<li>若$cos\frac{A+B}{2}&#x3D;cosC&#x3D;0$:<br> 则$C&#x3D;-\frac{1}{2}\pi+2k\pi,A&#x3D;\frac{1}{6}\pi+2m\pi,B&#x3D;\frac{5}{6}\pi+2n\pi,k,n,m\in\mathbb{Z}$<br> 或$C&#x3D;\frac{1}{2}\pi+2k\pi,A&#x3D;\frac{7}{6}\pi+2m\pi,B&#x3D;\frac{11}{6}\pi+2n\pi,k,n,m\in\mathbb{Z}$<br> 易得$cos^2A+cos^2B+cos^2C&#x3D;\frac{3}{2}$<br> (原答案没有对此情况进行讨论)</li>
-<li>若$cos\frac{A+B}{2}\not&#x3D;0$<br> $①\div ②$得$tan\frac{A+B}{2}&#x3D;tanC$<br> $$cos(A+B)&#x3D;\frac{1-tan^2\frac{A+B}{2}}{1+tan^2\frac{A+B}{2}}&#x3D;\frac{1-tan^2C}{1+tan^2C}&#x3D;cos2C$$$$<br>\begin{aligned}<br>cos^2A+cos^2B+cos^2C&amp;&#x3D;\frac{1}{2}(1+cos2A+1+cos2B+1+cos2C)\&amp;&#x3D;\frac{3}{2}+\frac{1}{2}[2cos(A+B)cos(A-B)+cos2C]\&amp;&#x3D;\frac{3}{2}+\frac{1}{2}[2cos2C\cdot(-\frac{1}{2}+cos2C)]\&amp;&#x3D;\frac{3}{2}+0\&amp;&#x3D;\frac{3}{2}<br>\end{aligned}<br>$$</li>
-</ol>
-<h5 id="6-一些结论"><a href="#6-一些结论" class="headerlink" title="6. 一些结论"></a>6. 一些结论</h5><p>$$cos\alpha+cos(\alpha+\frac{2}{3}\pi)+cos(\alpha+\frac{4}{3}\pi)&#x3D;0$$<br>$$sin\alpha+sin(\alpha+\frac{2}{3}\pi)+sin(\alpha+\frac{4}{3}\pi)&#x3D;0$$<br>$$cos^2\alpha+cos^2(\alpha+\frac{2}{3}\pi)+cos^2(\alpha+\frac{4}{3}\pi)&#x3D;\frac{3}{2}$$<br>$$sin^2\alpha+sin^2(\alpha+\frac{2}{3}\pi)+sin^2(\alpha+\frac{4}{3}\pi)&#x3D;\frac{3}{2}$$</p>
-<h5 id="7-推广"><a href="#7-推广" class="headerlink" title="7. 推广"></a>7. 推广</h5><p>设$\alpha_1,\alpha_2,\alpha_3,\cdots\alpha_n(n\in\mathbb{Z},n\ge3)$是终边将单位圆n等分的一组角，则:<br>$$cos\alpha_1+cos\alpha_2+\cdots+cos\alpha_n&#x3D;0$$<br>$$sin\alpha_1+sin\alpha_2+\cdots+sin\alpha_n&#x3D;0$$<br>$$cos^2\alpha_1+cos^2\alpha_2+\cdots+cos^2\alpha_n&#x3D;\frac{n}{2}$$<br>$$sin^2\alpha_1+sin^2\alpha_2+\cdots+sin^2\alpha_n&#x3D;\frac{n}{2}$$<br>即:<br>$$\sum_{k&#x3D;1}^{n}cos(\alpha+\frac{k-1}{n}\cdot2\pi)&#x3D;0$$<br>$$\sum_{k&#x3D;1}^{n}sin(\alpha+\frac{k-1}{n}\cdot2\pi)&#x3D;0$$<br>$$\sum_{k&#x3D;1}^{n}cos^2(\alpha+\frac{k-1}{n}\cdot2\pi)&#x3D;\frac{n}{2}$$<br>$$\sum_{k&#x3D;1}^{n}sin^2(\alpha+\frac{k-1}{n}\cdot2\pi)&#x3D;\frac{n}{2}$$<br>还没有找到证明方法(三角函数水平太差了)，就以后再说吧。</p>
-
+          <p>记一道离谱的题目，以及推出的一些结论</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/02/19/%E8%AE%B0%E4%B8%80%E9%81%93%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0%E9%A2%98/">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
